@@ -1,0 +1,42 @@
+EASY
+Get info about the list data type and the variables / functions it offers (not used in actual code)
+HINT (Highlight): If you use this, you might be seeking...
+Convert an Int to a String
+Convert a String to a Int
+Reverse a list
+Remove item at index in list
+Remove the first and last item in a string (also works for lists)
+Loop over a list using its index
+Split a string based on a value
+Do floor division (7 / 3 = 2)
+
+MEDIUM
+Make an unlinked copy of a list
+Convert an list of numbers as strings to a list of ints
+Get every odd letter in a string
+Get every even letter in a string
+Replace all instances of the int 3 with the string “three” in an array
+Return “bizz” if x mod 3 equals 0 else return “buzz” (The spelling mistake is intentional)
+Sort an array in the form [[1,2], [2,1]...] based on the second value (not a one-liner)
+Find an item in an array, return -1 if not found (not a one-liner)
+
+HARD (STUFF I DIDN’T KNOW)
+Reverse a string (not a list)
+Flatten a multidimensional array ([[1,2], 3] = [1, 2, 3])
+Interweave two strings
+
+CHAPTER 2: ALGORITHM APPLICATION
+Using your knowledge of Python from the section above, try and solve some of these questions as one-liners.
+
+EASY
+Print the first ten multiples of two (2, 4, 8, 16...) separated by spaces
+CHALLENGE: See how many unique (not just changing syntax) ways you can do this problem
+
+MEDIUM
+Return an array of the first twenty fibonacci numbers starting with “1, 1” (an array named x with [1, 1] is defined for you)
+CHALLENGE: Try and complete this question without the use of x, returning the array at the end (This one is very hard and requires the use of a special operator)
+
+HARD
+Write a function or lambda to return the amount of unique characters in a string of only lowercase letters (“aaaaa” returns 1, “abcde” returns 5, “aabbabbabab” returns 2)
+Write a function or lambda to check if a string is a palindrome (“racecar” reversed is “racecar”, which is a palindrome) (make sure to account for strings with odd and even letter counts)
+Write a function which swaps the case of a string (“Among Us” = “aMONG uS”, “Cool. String” = “cOOL. sTRING”)
