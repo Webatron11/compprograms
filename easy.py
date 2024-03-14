@@ -8,6 +8,7 @@
 # Loop over a list using its index
 # Split a string based on a value
 # Do floor division (7 / 3 = 2)
+# In order of above
 
 print(str(1))
 
