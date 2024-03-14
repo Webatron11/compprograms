@@ -12,39 +12,35 @@ test = ['test', 'test2']
 test_unlinked = test.copy()
 
 # 2
-numberasstrings = ['1', '2', '3', '4']
-print([int(i) for i in numberasstrings])
+print([int(i) for i in ['1', '2', '3', '4']])
 
 string = "string"
 
 # 3
-for i in range(len(string)):
-    if (i % 2) != 0: print(string[i])
+print(string[::2])
 
 # 4
-for i in range(len(string)):
-    if (i % 2) == 0: print(string[i])
-
-array = [3, 3, 2, 2]
+print(string[1::2])
 
 # 5
-for i in range(len(array)):
-    if array[i] == 3: array[i] = 'Three'
-
-array = [3, 3, 3, 2, 2, 2]
+array = [3, 2, 3, 2]
+print([i if i != 3 else "three" for i in array])
 
 # 6
-for i in range(len(array)):
-    if array[i] % 3 == 0: print('bizz')
-    else: print('buzz')
-
-# HARD - reversing string
-array = list('string')
-array.reverse()
-print(str(array))
+array = [3, 3, 3, 2, 2, 2]
+print(['bizz' if (i % 3) == 0 else "buzz" for i in array])
 
 # 7
 array = [[2, 1], [3, 2], [4, 3], [1, 2]]
-array[0:-1][1].sort()
+array.sort(key=lambda x: x[1])
 print(array)
+
+# 8
+array = ["item1", 'item2', "item3"]
+
+try: print(array.index(''))
+except ValueError: print(-1)
+
+# This is morgan's code - i couldnt read it in docs.
+print(array.index('item2') if "item2" in array else -1)
 
